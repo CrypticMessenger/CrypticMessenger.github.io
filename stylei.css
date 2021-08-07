@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+#logo-img{
+  height: 15vh;
+}
+h1{
+  font-family:Oswald;
+  letter-spacing:1vh;
+  animation-name: greeting;
+  animation-duration:1.5s;
+  animation-timing-function: ease;
+}
+@keyframes greeting {
+  0%{
+    letter-spacing:5vh;
+    opacity: 0;
+  }
+  100%{
+    letter-spacing:1vh;
+    opacity: 1;
+  }
+}
+body{
+  background-image: url("https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  /* background-color:white; */
+  text-align:center;
+}
+#intro{
+  font-size:larger;
+}
+#main-content{
+  font-family: Comfortaa;
+  text-align:center;
+  padding: 10px;
+  line-height: 2;
+}
+blockquote{
+  width:100%;
+  padding: 10px;
+  border-radius:5px ;
+  background-color:rgba(255, 255, 255, 0.349);
+  color:rgb(0, 255, 179);
+}
+#me-photo{
+  /* opacity:0;
+  border-radius: 50%; */
+  width:0vh;
+  filter: brightness(125%);
+  animation-name: fader;
+  animation-duration:1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+@keyframes fader {
+  0%{
+    width:0vh;
+  }
+  100%{
+    width:30vh;
+  }
+  
+}
+.ending{
+  color:white;
+}
+.about-me{
+  padding: 10px;
+  margin-top: 5px;
+  color: white;
+  font-weight: bolder;
+}

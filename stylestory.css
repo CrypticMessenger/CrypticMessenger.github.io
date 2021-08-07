@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+#logo-img{
+  height: 15vh;
+}
+h1{
+    color: white;
+  font-family:Oswald;
+  letter-spacing:1vh;
+  animation-name: greeting;
+  animation-duration:1.5s;
+  animation-timing-function: ease;
+}
+.fa-beat{
+    animation:fa-beat 1s ease infinite;
+}
+@keyframes fa-beat {
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.25);
+    }
+    100%{
+        transform:scale(1);
+    }
+    
+}
+@keyframes greeting {
+  0%{
+    letter-spacing:5vh;
+    opacity: 0;
+  }
+  100%{
+    letter-spacing:1vh;
+    opacity: 1;
+  }
+}
+body{
+  background-image: url("https://images.pexels.com/photos/4504714/pexels-photo-4504714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  /* background-color:white; */
+  text-align:center;
+}
+#intro{
+  font-size:larger;
+}
+#main-content{
+    font-weight: bolder;
+  font-family: Comfortaa;
+  text-align:center;
+  padding: 10px;
+  line-height: 2;
+  color: white;
+}
+blockquote{
+  width:100%;
+  padding: 10px;
+  border-radius:5px ;
+  background-color:rgba(255, 255, 255, 0.349);
+  color:rgb(0, 255, 179);
+}
+
+@keyframes fader {
+  0%{
+    width:0vh;
+  }
+  100%{
+    width:30vh;
+  }
+  
+}
+.ending{
+  color:white;
+}
+.My-story{
+  padding: 10px;
+  margin-top: 5px;
+  color: white;
+  font-weight: bolder;
+}
